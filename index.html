@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Basis-expansion : Generates features according to different non-linear basis expansion methods">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Basis-expansion</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/rishirdua/basis-expansion">View on GitHub</a>
+
+          <h1 id="project_title">Basis-expansion</h1>
+          <h2 id="project_tagline">Generates features according to different non-linear basis expansion methods</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/rishirdua/basis-expansion/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/rishirdua/basis-expansion/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="non-linear-basis-expansion" class="anchor" href="#non-linear-basis-expansion"><span class="octicon octicon-link"></span></a>Non Linear Basis Expansion</h1>
+
+<p>Generates features according to different non-linear basis expansion methods</p>
+
+<p>Currently implemented methods:</p>
+
+<ul>
+<li><p>Expands each feature I with 1 &lt;= I &lt;= n_features as a vector of n features as exp(-\gamma x_i^2) .* [1, z, (z^2)/sqrt(2!), (z^3)/sqrt(3!) , …, (z^n)/sqrt(n!)] where z= \sqrt(2*\gamma) x_i.
+ie. For any given n you will now get a vector of size n_features*(n+1). Given a value for n, repeats for k = 1, 2, 3, ... n</p></li>
+<li><p>Recht and Rahimi’s Random Fourier Features as defined in
+Rahimi, Ali, and Benjamin Recht. "Random features for large-scale kernel machines." In Advances in neural information processing systems, pp. 1177-1184. 2007.</p></li>
+</ul><h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Rishi Dua <a href="http://github.com/rishirdua">http://github.com/rishirdua</a></p>
+
+<h2>
+<a name="contribute" class="anchor" href="#contribute"><span class="octicon octicon-link"></span></a>Contribute</h2>
+
+<p>Todo: Implementing other basis: Gaussian, Polynomial etc.</p>
+
+<ul>
+<li>Issue Tracker: <a href="https://github.com/rishirdua/basis-expansion/">https://github.com/rishirdua/basis-expansion/</a>
+</li>
+<li>Source Code: github.com/rishirdua/basis-expansion</li>
+<li>Project page: <a href="http://rishirdua.github.io/basis-expansion">http://rishirdua.github.io/basis-expansion</a>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This project is licensed under the terms of the MIT license. See LICENCE.txt for details</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Basis-expansion maintained by <a href="https://github.com/rishirdua">rishirdua</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
